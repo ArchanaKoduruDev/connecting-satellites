@@ -1,0 +1,25 @@
+import random
+import pgzrun
+
+TITLE = "Connect the {Satellites) to win!!!"
+HEIGHT = 500
+WIDTH = 500
+
+Satellite = Actor("satellite")
+
+Satellite.x = random.randint(0,WIDTH-50)
+Satellite.y = random.randint(0,HEIGHT-50)
+
+
+
+def draw():
+    screen.fill("black")
+    Satellite.draw()
+
+
+
+
+pgzrun.go()
+
+
+
